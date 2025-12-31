@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEW-PROTECH | Peinture & Décoration d’Appartements à Casablanca</title>
+  <meta name="description" content="NEW-PROTECH à Casablanca (Maroc) : peinture intérieure, décoration, enduits, faux plafond, traitement humidité, finitions. Devis gratuit sur WhatsApp." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- SEO / Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HomeAndConstructionBusiness",
+    "name":"NEW-PROTECH",
+    "description":"Peinture et décoration d’appartements à Casablanca : enduits, lissage, faux plafond, effet décoratif, traitement humidité, finitions.",
+    "areaServed":"Casablanca, Maroc",
+    "telephone":"+212605586563",
+    "email":"benzotechnique@gmail.com",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Casablanca",
+      "addressCountry":"MA"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b1220; --card:#0f1a33; --muted:#a9b4d0; --text:#eef2ff;
+      --brand:#6ee7ff; --brand2:#a78bfa; --line: rgba(255,255,255,.12);
+      --shadow: 0 18px 40px rgba(0,0,0,.35); --radius: 18px; --max: 1120px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:var(--font); color:var(--text); line-height:1.55;
+      background:
+        radial-gradient(1200px 600px at 10% 10%, rgba(110,231,255,.18), transparent 60%),
+        radial-gradient(900px 500px at 90% 20%, rgba(167,139,250,.18), transparent 55%),
+        radial-gradient(900px 500px at 50% 95%, rgba(34,197,94,.10), transparent 55%),
+        var(--bg);
+    }
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.62);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:12px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; font-weight:900;
+    }
+    .logo{
+      width:40px; height:40px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(110,231,255,.95), rgba(167,139,250,.95));
+      display:grid; place-items:center; color:#061027; box-shadow: var(--shadow);
+      font-weight:1000;
+    }
+    .links{display:flex; gap:16px; align-items:center}
+    .links a{
+      color: var(--muted); font-weight:700; padding:10px 10px; border-radius:10px;
+      transition: background .15s ease, color .15s ease;
+    }
+    .links a:hover{background: rgba(255,255,255,.06); color: var(--text)}
+
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:12px 16px; border-radius:999px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      color:#07101f; font-weight:900; border:0; cursor:pointer;
+      box-shadow: 0 12px 28px rgba(110,231,255,.18);
+      transition: transform .15s ease, filter .15s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform: translateY(-1px); filter: brightness(1.04)}
+    .btn.secondary{
+      background: transparent; color: var(--text);
+      border:1px solid var(--line); box-shadow:none;
+    }
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid var(--line);
+      color: var(--muted); font-weight:750;
+    }
+
+    header.hero{padding: 44px 0 22px;}
+    .heroCard{
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow); overflow:hidden;
+    }
+    .heroGrid{display:grid; grid-template-columns: 1.15fr .85fr; gap: 0; align-items:stretch;}
+    .heroMain{padding: 26px;}
+    .heroMain h1{
+      margin:0 0 10px;
+      font-size: clamp(28px, 3.6vw, 46px);
+      line-height:1.08; letter-spacing:-.6px;
+    }
+    .heroMain p{margin:0 0 18px; color: var(--muted); font-size: 16.5px}
+    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top: 16px}
+    .kpis{display:flex; gap:12px; flex-wrap:wrap; margin-top: 12px}
+    .kpi{
+      flex:1 1 160px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: 16px; padding: 12px;
+    }
+    .kpi b{font-size:18px}
+    .kpi span{display:block; color: var(--muted); font-weight:700}
+
+    .heroPhoto{
+      min-height: 320px;
+      background:
+        linear-gradient(135deg, rgba(110,231,255,.16), rgba(167,139,250,.10)),
+        url('images/realisation-3.jpg');
+      background-size: cover; background-position:center;
+      border-left:1px solid var(--line);
+      position:relative;
+    }
+    .badge{
+      position:absolute; left:16px; bottom:16px;
+      background: rgba(11,18,32,.72);
+      border:1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px; max-width: 330px;
+    }
+    .badge b{display:block; margin-bottom:4px}
+    .badge span{color:var(--muted); font-weight:700}
+
+    section{padding: 26px 0}
+    .sectionHead{display:flex; justify-content:space-between; align-items:flex-end; gap:14px; margin-bottom:12px}
+    .sectionHead h2{margin:0; font-size:22px; letter-spacing:-.2px}
+    .sectionHead p{margin:0; color: var(--muted)}
+    .grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
+    .grid2{display:grid; grid-template-columns: repeat(2, 1fr); gap:14px}
+    .card{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: 0 14px 30px rgba(0,0,0,.22);
+    }
+    .card h3{margin:0 0 6px; font-size: 16.5px}
+    .card p{margin:0; color: var(--muted)}
+    .icon{
+      width:42px; height:42px; border-radius: 14px;
+      display:grid; place-items:center;
+      background: rgba(255,255,255,.06);
+      border:1px solid var(--line);
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .gallery{display:grid; grid-template-columns: repeat(2, 1fr); gap:10px; margin-top:12px}
+    .thumb{
+      border-radius: 16px;
+      border:1px solid var(--line);
+      overflow:hidden;
+      background: rgba(255,255,255,.04);
+      min-height: 160px;
+      position:relative;
+    }
+    .thumb img{width:100%; height:100%; object-fit:cover; display:block}
+    .thumb .cap{
+      position:absolute; left:10px; bottom:10px;
+      background: rgba(11,18,32,.72);
+      border:1px solid var(--line);
+      border-radius: 12px;
+      padding:8px 10px;
+      font-weight:900;
+    }
+
+    form{display:grid; gap:10px}
+    .row{display:grid; grid-template-columns: 1fr 1fr; gap:10px}
+    label{font-weight:900; font-size:13px; color: var(--muted)}
+    input, select, textarea{
+      width:100%; padding:12px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      outline:none;
+    }
+    textarea{min-height: 110px; resize: vertical}
+    .help{color: var(--muted); font-size: 13px; margin-top:6px}
+    .success{
+      border:1px solid rgba(34,197,94,.35);
+      background: rgba(34,197,94,.08);
+      border-radius: 14px;
+      padding: 12px;
+      color: rgba(220,252,231,.96);
+      font-weight:800;
+      display:none;
+    }
+
+    footer{
+      padding: 26px 0 40px;
+      border-top:1px solid var(--line);
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    .floatWA{
+      position:fixed; right:16px; bottom:16px; z-index:60;
+      display:flex; gap:10px; align-items:center;
+    }
+    .waBtn{
+      display:inline-flex; align-items:center; gap:10px;
+      border-radius: 999px;
+      padding: 12px 14px;
+      background: rgba(34,197,94,.92);
+      color: #05150b;
+      font-weight:1000;
+      box-shadow: 0 14px 34px rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.18);
+    }
+
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns: 1fr}
+      .heroPhoto{border-left:0; border-top:1px solid var(--line); min-height: 250px}
+      .grid3{grid-template-columns: 1fr}
+      .grid2{grid-template-columns: 1fr}
+      .links{display:none}
+      .gallery{grid-template-columns: 1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">N</div>
+          <div>
+            <div style="font-size:13px; color:var(--muted); font-weight:900;">Société</div>
+            <div style="font-size:16px; font-weight:1000;">NEW-PROTECH</div>
+          </div>
+        </div>
+        <nav class="links" aria-label="Navigation">
+          <a href="#services">Services</a>
+          <a href="#specialites">Spécialités</a>
+          <a href="#realisations">Réalisations</a>
+          <a href="#devis">Devis</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn" href="#devis">📩 Devis gratuit</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <div class="heroCard">
+        <div class="heroGrid">
+          <div class="heroMain">
+            <span class="chip">🎨 Peinture • Décoration • Finitions</span>
+            <h1>Peinture & décoration d’appartements à Casablanca.</h1>
+            <p>
+              <b>NEW-PROTECH</b> réalise la peinture intérieure, les enduits, la décoration et les finitions
+              avec un travail propre et des matériaux professionnels.
+            </p>
+
+            <div class="ctaRow">
+              <a class="btn" id="waHero" href="#">💬 WhatsApp</a>
+              <a class="btn secondary" href="#realisations">Voir nos réalisations</a>
+            </div>
+
+            <div class="kpis">
+              <div class="kpi"><b>Travail propre</b><span>Protection + nettoyage</span></div>
+              <div class="kpi"><b>Finitions soignées</b><span>Contrôle qualité</span></div>
+              <div class="kpi"><b>Devis rapide</b><span>Réponse 24–48h</span></div>
+            </div>
+
+            <div style="margin-top:12px; display:flex; flex-wrap:wrap; gap:10px;">
+              <span class="chip">📍 Casablanca, Maroc</span>
+              <span class="chip">📞 +212605586563</span>
+              <span class="chip">📧 benzotechnique@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="heroPhoto" role="img" aria-label="Chantier NEW-PROTECH">
+            <div class="badge">
+              <b>Disponible à Casablanca</b>
+              <span>Peinture intérieure • Enduits • Décoration • Faux plafond</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2>Nos services</h2>
+            <p>Tout ce qu’il faut pour rénover et décorer votre appartement.</p>
+          </div>
+          <a class="chip" href="#devis">✅ Estimation gratuite</a>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <div class="icon">🧱</div>
+            <h3>Peinture intérieure</h3>
+            <p>Salon, chambres, cuisine, couloir : peintures lessivables et finitions propres.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🪣</div>
+            <h3>Enduits & lissage</h3>
+            <p>Rebouchage, ponçage, ratissage, préparation complète avant peinture.</p>
+          </div>
+          <div class="card">
+            <div class="icon">✨</div>
+            <h3>Décoration & couleurs</h3>
+            <p>Conseil couleurs, murs d’accent, harmonies modernes, rendu lumineux.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🧯</div>
+            <h3>Traitement humidité</h3>
+            <p>Anti-moisissure, préparation des supports, peinture adaptée selon besoin.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🧰</div>
+            <h3>Réparation fissures</h3>
+            <p>Traitement des fissures et imperfections pour un mur uniforme.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🧹</div>
+            <h3>Chantier propre</h3>
+            <p>Protection des sols + nettoyage fin de chantier : rendu prêt à vivre.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spécialités -->
+    <section id="specialites">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2>Nos spécialités</h2>
+            <p>Des finitions qui font la différence.</p>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <div class="icon">🎯</div>
+            <h3>Finitions premium</h3>
+            <p>Angles propres, couches régulières, retouches soignées.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🪄</div>
+            <h3>Effets décoratifs</h3>
+            <p>Effet marbré / nuagé / velours (selon demande) et murs design.</p>
+          </div>
+          <div class="card">
+            <div class="icon">📏</div>
+            <h3>Respect des délais</h3>
+            <p>Organisation et planification : livraison selon rendez-vous.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Réalisations -->
+    <section id="realisations">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2>Réalisations</h2>
+            <p>Quelques photos de nos chantiers (tes images jointes).</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="gallery">
+            <div class="thumb">
+              <img src="images/realisation-1.jpg" alt="Réalisation NEW-PROTECH 1">
+              <div class="cap">Décoration murale</div>
+            </div>
+            <div class="thumb">
+              <img src="images/realisation-2.jpg" alt="Réalisation NEW-PROTECH 2">
+              <div class="cap">Faux plafond / préparation</div>
+            </div>
+            <div class="thumb">
+              <img src="images/realisation-3.jpg" alt="Réalisation NEW-PROTECH 3">
+              <div class="cap">Peinture intérieure</div>
+            </div>
+            <div class="thumb">
+              <img src="images/realisation-4.jpg" alt="Réalisation NEW-PROTECH 4">
+              <div class="cap">Chantier & finitions</div>
+            </div>
+          </div>
+          <p class="help">💡 Si une photo s’affiche “cassée”, vérifie le nom du fichier dans le dossier <b>images/</b>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Devis -->
+    <section id="devis">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2>Demande de devis</h2>
+            <p>Envoie-nous les détails, on te répond rapidement.</p>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <div class="success" id="successBox">✅ Message prêt ! Tu peux l’envoyer par WhatsApp.</div>
+
+            <form id="quoteForm">
+              <div class="row">
+                <div>
+                  <label for="name">Nom *</label>
+                  <input id="name" name="name" required placeholder="Votre nom" />
+                </div>
+                <div>
+                  <label for="phone">Téléphone *</label>
+                  <input id="phone" name="phone" required placeholder="+212..." />
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <label for="city">Ville *</label>
+                  <input id="city" name="city" required value="Casablanca" />
+                </div>
+                <div>
+                  <label for="type">Type *</label>
+                  <select id="type" name="type" required>
+                    <option value="">Choisir…</option>
+                    <option>Appartement - peinture complète</option>
+                    <option>Appartement - une pièce</option>
+                    <option>Décoration murale</option>
+                    <option>Enduits / lissage</option>
+                    <option>Traitement humidité</option>
+                    <option>Autre</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <label for="surface">Surface approx.</label>
+                  <input id="surface" name="surface" placeholder="Ex : 90 m²" />
+                </div>
+                <div>
+                  <label for="date">Quand commencer ?</label>
+                  <select id="date" name="date">
+                    <option>Urgent</option>
+                    <option>Cette semaine</option>
+                    <option>Ce mois-ci</option>
+                    <option>À planifier</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="details">Détails *</label>
+                <textarea id="details" name="details" required placeholder="Décrivez : nombre de pièces, état des murs, couleurs souhaitées, humidité, etc."></textarea>
+                <div class="help">Tu peux aussi dire : “je vous envoie des photos”.</div>
+              </div>
+
+              <div class="ctaRow">
+                <button class="btn" type="submit">💬 Envoyer sur WhatsApp</button>
+                <button class="btn secondary" type="button" id="copyBtn">📋 Copier le message</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="card" id="contact">
+            <h3 style="margin-top:0">Contact</h3>
+            <p><b>NEW-PROTECH</b> — Casablanca, Maroc</p>
+            <p><b>📞 Téléphone :</b> <a href="tel:+212605586563">+212605586563</a></p>
+            <p><b>💬 WhatsApp :</b> <a id="waLink" href="#" rel="noopener">Ouvrir WhatsApp</a></p>
+            <p><b>📧 Email :</b> <a href="mailto:benzotechnique@gmail.com">benzotechnique@gmail.com</a></p>
+
+            <div style="height:1px; background:var(--line); margin:14px 0;"></div>
+
+            <h3>Zone d’intervention</h3>
+            <p>Casablanca et alentours (sur demande).</p>
+
+            <div style="height:1px; background:var(--line); margin:14px 0;"></div>
+
+            <a class="btn" id="waContact" href="#">🟢 Écrire sur WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px; align-items:center;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div class="logo">N</div>
+          <div>
+            <div style="font-weight:1000;">NEW-PROTECH</div>
+            <div style="font-size:13px;">Peinture & Décoration — Casablanca, Maroc</div>
+          </div>
+        </div>
+        <div style="font-size:13px;">© <span id="year"></span> NEW-PROTECH — Tous droits réservés</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating -->
+  <div class="floatWA" aria-label="Bouton WhatsApp">
+    <a class="waBtn" id="waFloat" href="#" rel="noopener">🟢 WhatsApp</a>
+  </div>
+
+  <script>
+    const BUSINESS = {
+      phoneInternational: "+212605586563",
+      whatsappNumber: "212605586563",
+      email: "benzotechnique@gmail.com",
+      city: "Casablanca",
+      company: "NEW-PROTECH"
+    };
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const waBase = "https://wa.me/" + BUSINESS.whatsappNumber;
+
+    const waLink = document.getElementById("waLink");
+    const waFloat = document.getElementById("waFloat");
+    const waHero  = document.getElementById("waHero");
+    const waContact = document.getElementById("waContact");
+
+    function buildMessage(data){
+      const lines = [
+        "Bonjour NEW-PROTECH,",
+        "",
+        "Je souhaite un devis pour peinture/décoration.",
+        "",
+        "Nom : " + (data.get("name") || ""),
+        "Téléphone : " + (data.get("phone") || ""),
+        "Ville : " + (data.get("city") || BUSINESS.city),
+        "Type : " + (data.get("type") || ""),
+        "Surface : " + (data.get("surface") || "Non précisée"),
+        "Début souhaité : " + (data.get("date") || ""),
+        "",
+        "Détails :",
+        (data.get("details") || ""),
+        "",
+        "Merci."
+      ];
+      return lines.join("\n");
+    }
+
+    const form = document.getElementById("quoteForm");
+    const successBox = document.getElementById("successBox");
+    const copyBtn = document.getElementById("copyBtn");
+
+    function updateWhatsAppPrefill(){
+      const data = new FormData(form);
+      const msg = encodeURIComponent(buildMessage(data));
+      const url = waBase + "?text=" + msg;
+
+      if(waLink) waLink.href = url;
+      if(waFloat) waFloat.href = url;
+      if(waHero) waHero.href = url;
+      if(waContact) waContact.href = url;
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      successBox.style.display = "block";
+      updateWhatsAppPrefill();
+      window.open(waLink.href, "_blank");
+    });
+
+    copyBtn.addEventListener("click", async () => {
+      const data = new FormData(form);
+      const msg = buildMessage(data);
+      try{
+        await navigator.clipboard.writeText(msg);
+        successBox.style.display = "block";
+        successBox.textContent = "✅ Message copié. Colle-le dans WhatsApp.";
+      }catch{
+        alert("Copie impossible automatiquement. Copie manuellement le texte.");
+      }
+    });
+
+    ["name","phone","city","type","surface","date","details"].forEach(id=>{
+      const el = document.getElementById(id);
+      el.addEventListener("input", updateWhatsAppPrefill);
+      el.addEventListener("change", updateWhatsAppPrefill);
+    });
+    updateWhatsAppPrefill();
+  </script>
+</body>
+</html>
